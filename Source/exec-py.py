@@ -139,6 +139,7 @@ except:
             disable_first_execution()
 
             first_execution_run = False
+            time.sleep(1)
         except:
             time.sleep(5)
 
