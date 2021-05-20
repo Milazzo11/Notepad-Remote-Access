@@ -153,4 +153,4 @@ while True:  # checks for updates on online text file exery second
 
         time.sleep(1)
     except:
-        pass
+        time.sleep(5)
