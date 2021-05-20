@@ -131,9 +131,16 @@ except:
     f.write(system_id)
     f.close()
 
-    write_info()
-    disable_first_execution()
+    first_execution_run = True
+    
+    while first_execution_run:  # performs setup actions on startup if applicable
+        try:
+            write_info()
+            disable_first_execution()
 
+            first_execution_run = False
+        except:
+            time.sleep(5)
 
 while True:  # checks for updates on online text file exery second
     try:
