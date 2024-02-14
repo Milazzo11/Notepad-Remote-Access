@@ -1,3 +1,5 @@
+[ NOTE: the dontpad.com API appears to no longer be active; for an effective ans modern remote access tool, see github.com/Milazzo11/MIDPEM ]
+
 This program allows for remote access using the wesite dontpad.com
 
 Create two dontpad.com links, and insert them into the code.  The first link is for code execution, and needs to be setup.  The other does not.
