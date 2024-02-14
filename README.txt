@@ -1,4 +1,4 @@
-[ NOTE: the dontpad.com API appears to no longer be active; for an effective ans modern remote access tool, see github.com/Milazzo11/MIDPEM ]
+[ NOTE: the dontpad.com API appears to no longer be active; for an effective and modern remote access tool, see github.com/Milazzo11/MIDPEM ]
 
 This program allows for remote access using the wesite dontpad.com
 
